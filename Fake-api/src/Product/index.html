@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Fake-api/src/Style/main.css" />
+    <title>Карточка товара</title>
+</head>
+
+<body>
+
+    <section class="top-bar-section container">
+        <div class="logo">
+            <img src="/Fake-api/images/logo.jpg" alt="Uzum Market">
+        </div>
+        <h1>Uzum Market</h1>
+        <button class="catalog-btn">
+            <span class="icon">📂</span> Каталог
+        </button>
+        <div class="search-bar">
+            <input type="text" placeholder="Искать товары и категории">
+            <button class="search-btn">🔍</button>
+        </div>
+        <div class="user-links">
+            <a href="/Fake-api/src/Sing-in/"><span class="icon">👤</span> Войти</a>
+            <a href="/Fake-api/src/basket/"><span class="icon">♡</span> Избранное</a>
+            <a href="/Fake-api/src/Favorites/"><span class="icon">🛒</span> Корзина</a>
+        </div>
+        </section>
+    
+
+    <div class="product-card">
+        <div class="gallery">
+            <div class="thumbnail-list">
+                <img src="/Fake-api/images/cglap9vg49devoach130 1.png" onclick="changeImage(this.src)">
+                <img src="/Fake-api/images/cglap9vg49devoach130 1.png" onclick="changeImage(this.src)">
+                <img src="/Fake-api/images/cglap9vg49devoach130 1.png" onclick="changeImage(this.src)">
+                <img src="/Fake-api/images/cglap9vg49devoach130 1.png" onclick="changeImage(this.src)">
+                <img src="/Fake-api/images/cglap9vg49devoach130 1.png" onclick="changeImage(this.src)">
+            </div>
+            <div class="product-image">
+                <img id="mainImage" src="/Fake-api/images/cglap9vg49devoach130 1.png" alt="Стиральный порошок Tide">
+            </div>
+        </div>
+
+        <div class="product-info">
+            <div class="product-title">Стиральный порошок Tide, Color Lenor Touch, автомат, 3 кг</div>
+            <div class="product-price">30 000 сум</div>
+            <div class="product-old-price">45 000 сум</div>
+
+            <div class="quantity-selector">
+                <button onclick="decreaseQuantity()">-</button>
+                <span id="quantity">1</span>
+                <button onclick="increaseQuantity()">+</button>
+            </div>
+
+            <div class="product-description">
+                Создан по новейшим разработкам. В основе — современные технологии стирки, эффективные энзимы и аромат
+                Lenor для свежести белья.
+            </div>
+
+            <div class="extra-description">
+                Станьте востребованным разработчиком. Вы изучите основы программирования и основные концепции
+                компьютерных наук, цифровые технологии, операционные системы, программное обеспечение, базы данных,
+                системы аналитики, языки программирования и многое другое.
+            </div>
+
+            <div class="product-actions">
+                <button>Добавить в корзину</button>
+                <button class="secondary">Добавить в избранное</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="Info">
+        <h3>
+            Описание товара
+        </h3>
+
+        <p>
+            Стиральный порошок Tide Lenor Touch подходит для использования в стиральных машинах любого типа. Сочетание
+            очищающего эффекта порошка и смягчающего эффекта Lenor делает вещи безупречно чистыми, нежными и свежими.
+            Стирайте согласно рекомендациям на ярлыках текстильных изделий. Рекомендованный режим стирки — от 20 минут
+            при температуре воды 30'C и выше. Обратите внимание: порошок не предназначен для стирки изделий из шерсти и
+            шелка. Синтетическое моющее средство порошкообразное для использования в стиральных машинах любого типа.
+            Рекомендованная температура стирки указана на ярлыках текстильных изделий. Не перегружайте стиральную
+            машину. Оставьте зазор в ширину ладони между загруженным бельем и барабаном. Белье будет двигаться свободно,
+            стирка будет более эффективной.
+        </p>
+    </div>
+
+
+    <section class="SuperPrice container">
+        <h1 class="text_1">
+            Похожие товары >
+        </h1>
+
+        <a href="/Fake-api/src/Product/">
+            <div class="card">
+                <div class="image-container">
+                    <img src="/Fake-api/images/phon.jpg" alt="Смартфон Samsung Galaxy A56 5G">
+                    <div class="badge">Суперцена</div>
+                </div>
+                <div class="card-body">
+                    <div class="product-title">
+                        Смартфон Samsung Galaxy A56 5G, 50 МП, Super AMOLED, 120 Гц
+                    </div>
+                    <div class="rating">⭐ 4.9 (11 отзывов)</div>
+                    <div class="installment">335 679 сум/мес</div>
+                    <div class="prices">
+                        <div class="old-price">8 000 000</div>
+                        <div class="new-price">4 739 000</div>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="/Fake-api/src/Product/">
+            <div class="card">
+                <div class="image-container">
+                    <img src="/Fake-api/images/phon.jpg" alt="Смартфон Samsung Galaxy A56 5G">
+                    <div class="badge">Суперцена</div>
+                </div>
+                <div class="card-body">
+                    <div class="product-title">
+                        Смартфон Samsung Galaxy A56 5G, 50 МП, Super AMOLED, 120 Гц
+                    </div>
+                    <div class="rating">⭐ 4.9 (11 отзывов)</div>
+                    <div class="installment">335 679 сум/мес</div>
+                    <div class="prices">
+                        <div class="old-price">8 000 000</div>
+                        <div class="new-price">4 739 000</div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="/Fake-api/src/Product/">
+            <div class="card">
+                <div class="image-container">
+                    <img src="/Fake-api/images/phon.jpg" alt="Смартфон Samsung Galaxy A56 5G">
+                    <div class="badge">Суперцена</div>
+                </div>
+                <div class="card-body">
+                    <div class="product-title">
+                        Смартфон Samsung Galaxy A56 5G, 50 МП, Super AMOLED, 120 Гц
+                    </div>
+                    <div class="rating">⭐ 4.9 (11 отзывов)</div>
+                    <div class="installment">335 679 сум/мес</div>
+                    <div class="prices">
+                        <div class="old-price">8 000 000</div>
+                        <div class="new-price">4 739 000</div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="/Fake-api/src/Product/">
+            <div class="card">
+                <div class="image-container">
+                    <img src="/Fake-api/images/phon.jpg" alt="Смартфон Samsung Galaxy A56 5G">
+                    <div class="badge">Суперцена</div>
+                </div>
+                <div class="card-body">
+                    <div class="product-title">
+                        Смартфон Samsung Galaxy A56 5G, 50 МП, Super AMOLED, 120 Гц
+                    </div>
+                    <div class="rating">⭐ 4.9 (11 отзывов)</div>
+                    <div class="installment">335 679 сум/мес</div>
+                    <div class="prices">
+                        <div class="old-price">8 000 000</div>
+                        <div class="new-price">4 739 000</div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="/Fake-api/src/Product/">
+            <div class="card">
+                <div class="image-container">
+                    <img src="/Fake-api/images/phon.jpg" alt="Смартфон Samsung Galaxy A56 5G">
+                    <div class="badge">Суперцена</div>
+                </div>
+                <div class="card-body">
+                    <div class="product-title">
+                        Смартфон Samsung Galaxy A56 5G, 50 МП, Super AMOLED, 120 Гц
+                    </div>
+                    <div class="rating">⭐ 4.9 (11 отзывов)</div>
+                    <div class="installment">335 679 сум/мес</div>
+                    <div class="prices">
+                        <div class="old-price">8 000 000</div>
+                        <div class="new-price">4 739 000</div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </section>
+
+
+    <script type="module" src="./script.js"></script>
+</body>
+
+</html>
